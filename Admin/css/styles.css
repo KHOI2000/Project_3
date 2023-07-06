@@ -1,0 +1,264 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+html,body
+{
+    overflow-x: hidden;
+}
+span{
+    font-weight: 800;
+    font-family: -webkit-body;
+    margin: 0 0 0 10px;
+}
+/* Chưa tìm được đường dẫn mấy cái icon trên thanh sidebar nên sài đỡ  */
+i{
+    margin: 0 5px;
+}
+/* Thêm Sửa*/
+.text-center{
+    font-family: 'Amarante', Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #009efb;
+    text-align: center;
+    margin-top: 15px;
+}
+/* ===================Phan header ======================== */
+#header {
+    height: 57.4px;
+}
+
+.head-logo__Container
+{
+    border-bottom: 1px solid rgb(228, 220, 220);
+    padding-top: -20px;
+    height: 0px;
+}
+
+.head-logo__Container>.head-logo>a
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.head-logo__Container>.head-logo>i
+{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.head-logo {
+    flex-basis: 15%;
+    display: block;
+    text-align: center;
+    margin-top: -15px;
+
+}
+
+#header .head-logo a {
+    display: block;
+    font-size: 25px;
+    padding-left: 65px;
+    padding-top: 15px;
+    color: #c2c7d0;
+
+}
+
+/* phan than cua head */
+#header .head-body {
+    width: 100%;
+    background:linear-gradient(to right,#0178bc 0%,#00bdda 100%);
+    position: relative;
+    padding-top: 10px;
+    margin-left: 250px;
+}
+
+ul.navbar li a {
+    color: white;
+    font-size: 15px;
+}
+
+ul.navbar li:hover a {
+    color: black;
+    opacity: 95%;
+}
+
+ul.nav-item li:hover a {
+    color: black;
+
+    opacity: 95%;
+}
+
+#header .head-body .navbar li {
+    padding: 10px 16px;
+}
+
+#header .head-body .navbar li{
+    display: block;
+}
+
+#search{
+    display: block;
+}
+
+#header .head-body .side ul {
+    position: absolute;
+    justify-items: center;
+    right: 0;
+}
+
+
+
+form#search {
+    position: relative;
+}
+
+form#search input {
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin: 5px 50%;
+    height: 35px;
+    width: 500px;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-left: 5px;
+}
+
+form#search button {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #a2a1a1;
+    padding: 9px 12px;
+}
+
+/* ============================================== Phan wp-content================================= */
+
+#wp-content .sidebar {
+    z-index: 99;
+    background: #fff;
+    order: 1;
+    width: 215px;
+    font-size: 20px;
+    display: block;
+    box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding: 2px 0;
+}
+
+
+#wp-content .content {
+    order: 2;
+    width: 100%;
+    font-weight: 400;
+    margin: 0px 80px;
+}
+
+ul.menu-page li a {
+    color: #54667a;
+    display: block;
+    font-size: 15px;
+    text-align: left;
+    margin: 0 20px ;
+    font-weight: 500;
+
+}
+
+ul.menu-page li {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.name-sb{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(228, 220, 220);
+    
+}
+
+.name-sb li
+{   
+    color:#54667a;
+   
+}
+ul.menu-page li:hover{
+    border-left: 3px solid #00bdda;
+}
+
+#wp-content .sidebar .menu-page {
+    height: 100%;
+    position: relative;
+}
+
+
+
+ul.menu-page li:hover a {
+    color: #009efb;
+}
+ul.menu-page li a{
+    transition: all 0.2s linear;
+    font-size: 20px;
+
+}
+ul.menu-page li a:hover {
+    color: linear-gradient(to right,#0178bc 0%,#00bdda 100%);
+}
+
+
+/* =====================phần footer================== */
+.main-footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 0px; 
+    height: 57.4px;
+    background: linear-gradient(to right,#0178bc 0%,#00bdda 100%);
+    margin-top: 10px;
+}
+
+.main-footer p 
+{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #fff ;    
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 57px;
+}
+
+.main-footer .footer-head 
+{   
+    width: 15%;
+    background: #fff;
+}
+
+.main-footer .footer-body
+{
+    width: 85%;
+    background-color: #fff;
+    justify-content:center;
+}
+
+

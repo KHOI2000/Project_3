@@ -1,0 +1,129 @@
+/* PC */
+
+@media (min-width: 1824px) {}
+
+
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+
+/* mobile */
+
+@media (max-width: 740px) {
+    #header {
+        height: 43px;
+        overflow: hidden;
+    }
+    .container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    /* tìm kiem */
+    
+    .SearchItem img
+    {
+        margin: 10px 250px;
+    }
+    
+    .SearchItem
+    {
+        width: 300px;
+    }
+
+    #menu-search input {
+        width: 210px;
+        height: 40px;
+    }
+    #menu-search .btTimKiem {
+        position: relative;
+        height: 25px;
+        width: 25px;
+        margin: -3px -35px
+    }
+    /* logo */
+    #containLogo,
+    .Header_Logo {
+        display: none;
+    }
+    #nameLogo {
+        display: none;
+    }
+    #main-menu {
+        display: block;
+        margin: auto auto;
+    }
+    #main-menu li {
+        margin: auto 5px;
+    }
+    /* menu */
+    #Mobile-menu-btn {
+        display: block;
+        position: absolute;
+        top: 0;
+        margin: 10px 5px;
+    }
+    /* san pham */
+    .sub-menu_Product {
+        position: fixed;
+        z-index: 10;
+        display: flex;
+        height: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 400px;
+        top: 0;
+        right: 0;
+        margin: 0 -275px;
+        transition: 0.3s ease-out;
+    }
+    #subProduct:hover .sub-menu_Product {
+        margin: 0 0;
+    }
+    .sub-menu_Product a {
+        font-size: 10px;
+    }
+    /* Thong tin tai khoan va tim kiem */
+    #Contain_NewInfor {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 5px;
+    }
+    #header .Contain_HistoryCart {
+        display: none;
+    }
+    .sub-menu_Infor {
+        margin: -10px 0;
+    }
+    /* review khach hang */
+    .Contain_ReviewUser {
+        width: 400px;
+        height: auto;
+        padding: 10px 0;
+    }
+    .Image_ReviewUser {
+        width: auto;
+    }
+    .Image_ReviewUser img {
+        height: 50px;
+        width: 50px;
+    }
+    .Contain_ReviewUser p {
+        font-size: 12px;
+    }
+    /* loc gia sap xep */
+    #wrapper_SubMenu {
+        margin: 42px 19px;
+    }
+    #main_menu_SubMenu {
+        height: 55px;
+    }
+    #main_menu_SubMenu div {
+        margin: auto 5px;
+    }
+    #main_menu_SubMenu div ul.sub_menu {
+        margin: -10px 0;
+    }
+}

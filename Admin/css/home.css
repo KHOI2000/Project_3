@@ -1,0 +1,691 @@
+
+.wrapper form {
+    background-color: rgba(13, 233, 233, 0.164);
+}
+canvas#myChart1 {
+    margin-left: -14em;
+}
+.wrapper{
+    
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+.header{
+    background-repeat: no-repeat;
+    background-size: 100% 180px;
+    border: 1px solid #ff80ff;
+    height: 180px;
+    width: 100%;
+}
+.menu{
+    height: 50px;
+    width: 100%;
+}
+#main{
+    border: 1px solid #00ff80;
+    height: 400px;
+    width: 100%;
+
+}
+
+ul.listmenu{
+    padding: 0;
+    margin: 0;
+    width: 60%;
+    list-style: none;
+    margin: 0 auto;  
+}
+
+ul.listmenu li a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(71, 59, 4);
+}
+ul.listmenu li{
+    float: left;
+    list-style: none;
+    margin: 7px;
+    padding: 3px;
+
+}
+.clear{
+    clear:both;
+}
+h1.active{
+    color: rgb(92, 83, 83);
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.product{
+    vertical-align: bottom;
+    height: 95px;
+    width: 150%;
+    color: rgb(243, 245, 237);
+    background-color: rgba(5, 93, 207, 0.863);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover;
+    text-align: center;
+
+}
+
+.staff{
+    vertical-align: bottom;
+    height: 95px;
+    width: 150%;    
+    color: rgb(243, 245, 237);
+    background-color: #e00b0be5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover; 
+    text-align: center;
+    
+}
+.goods{
+    vertical-align: bottom;
+    height: 95px;
+    width: 150%;
+    color: rgb(243, 245, 237);
+    background-color:   #9e0077d7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover;
+    text-align: center;
+}
+.buyer{
+    vertical-align: bottom;
+    height: 95px;
+    width: 150%;
+    color: rgb(243, 245, 237);
+    background-color: #125a00e3;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-size: cover;
+    text-align: center;
+}
+.div-pro{
+    border-radius: padding;
+    display: block;
+    font-family: Tahoma, Verdana, sans-serif;
+    margin-top: 10px;
+    float: left;
+    padding-left: 8px;
+}
+.div-staff{
+    border-radius: padding;
+    display: block;
+    margin-top: 10px;
+    font-family: Tahoma, Verdana, sans-serif;
+    float: left;
+    padding-left: 8px;
+}
+.div-goods{
+    border-radius: padding;
+    display: block;
+    margin-top: 10px;
+    font-family: Tahoma, Verdana, sans-serif; 
+    float: left;
+    padding-left: 8px;
+
+}
+.div-buyer{
+    border-radius: padding;
+    display: block;
+    margin-top: 10px;
+    float: left;
+    padding-left: 8px;
+    font-family:Tahoma, Verdana, sans-serif;
+    
+}
+.menu {
+    padding-left: 70px;     
+    color: rgb(243, 245, 237);
+}   
+.product li a:hover{
+    background: rgb(49, 49, 49);
+}
+.on-strong li {
+    text-decoration: none;
+    list-style-type: none   !important;
+
+}
+h1.development{
+    color: rgb(92, 83, 83);
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    height: 1em;
+    width: 15em;
+    margin-left: 3em;
+}
+.network-actives{
+    border: 1p  x solid #ff0000;
+    height: 350px;
+    width: 71%;
+    margin-top: 65px;
+    margin-left: 314px;
+
+}
+.on-strong{
+    background: #5e76be67;
+    border: 2px solid #0F1C3F;
+    box-shadow: 0.375em 0.375em 0 0 rgba(8, 86, 175, 0.315);
+    height: 15em;
+    width: 15em;
+            display: block; 
+            position: absolute;
+            border-radius: 50%;
+            background-image: conic-gradient(
+                #2e9c53fb 80deg, 
+                #775eb1 0 320deg, 
+                #f0540bd3 0);
+}
+.strong{
+    width: 3em;
+    height: 3em;
+    margin-left: 8em;
+    margin-top: 2em;
+    text-align: center;
+}
+.unsatisfied{
+    width: 6em;
+    height: 3em;
+    text-align: center;
+    margin-top: -10em;
+    margin-left: 1.3em;
+
+}
+.people-accept{
+    width: 3em;
+    height: 3em;
+    margin-left: 4em;
+    margin-top: 4em;
+    text-align: center;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.div-Strong{
+    height: 0em;
+    width: 0em;
+}
+h2.note{
+    color: rgb(92, 83, 83);
+    font-size: 25px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    margin-left: 26em;
+    height: 2em;
+    width: 5em;
+
+}
+.green-strong{
+    width: 4em;
+    height: 1.75em;
+    background-color: #2e9c53fb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+.strong-note li{
+    text-decoration: none;
+    list-style-type: none   !important;
+    margin: 10px 0;
+}
+
+.strong-note div{
+    display: flex;
+}
+
+.strong-note div p{ 
+    width: 22em;
+    margin-top: 1em;
+    margin-left: 1em;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+
+.div-note{
+    width: 11em;
+    height: 8em;
+    margin-left: 20em;
+    margin-top: 5px;
+    
+
+}
+.orange-strong{
+    background-color: #f0540bd3;
+    width: 0.9em;
+    height: 1.75em;
+}
+
+
+.blue-strong{
+    width: 9em;
+    height: 1.75em;
+    background-color: #775eb1;
+}
+li.green-strong {
+    padding-left: 1em;
+    margin-left: 6em;
+}
+li.blue-strong {
+    padding-left: 6em;
+    margin-left: 6em;
+}
+li.orange-strong {
+    padding-left: 1em;
+    margin-left: 6em;
+}
+ul.strong-note {
+    width: 21em;
+    height: 12em;
+}
+.feedback {
+    margin-top:0em;
+    float: left;
+    width: 62em;
+    height: 8em;
+    margin-left: 2em;
+    font-family:  Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 125px;
+
+}
+canvas#myChart {
+    margin-top: 21em;
+}
+.facebook {
+    margin-top: 1em;
+    float: left;
+    width: 9em;
+    height: 4em;
+    margin-left: 19em;
+    text-align: center;
+    background: #1616acfb;
+}
+.on-facebook{
+    font-size: 23px;
+    width: 5em;
+    height: 0em;
+    color: white;
+    margin-top: 0.2em;
+    margin-left: 0.7em;
+    text-align: center;
+
+}
+.white-facebook{
+    margin-top: 5em;
+    height: 2em;
+    width: 2.45em;
+    padding-left: 32px;
+    border: 2px inset #1616acb7;
+    margin-left: 19em;
+    background-color: #0b0bb1a2;
+    
+}
+.white-facebook li {
+    text-decoration: none;
+    list-style-type: none   !important;
+    text-align: center;
+}
+.white-facebook-a{
+    margin-top: -2.23em;
+    height: 2em;
+    width: 2.35em;
+    padding-left: 28.5px;
+    border: 2px inset #1616acb7;
+    margin-left: 23.6em;
+    background-color: #0b0bb1a2;
+    
+}
+.white-twitter li {
+    text-decoration: none;
+    list-style-type: none   !important;
+    text-align: center;
+}
+.white-instagram li {
+    text-decoration: none;
+    list-style-type: none   !important;
+    text-align: center;
+}
+.white-gmail li {
+    text-decoration: none;
+    list-style-type: none   !important;
+    text-align: center;
+}
+.white-facebook-a li {
+    text-decoration: none;
+    list-style-type: none  !important;
+}
+.white-twitter-a li {
+    text-decoration: none;
+    list-style-type: none  !important;
+}
+.white-instagram-a li {
+    text-decoration: none;
+    list-style-type: none  !important;
+}
+.white-gmail-a li {
+    text-decoration: none;
+    list-style-type: none  !important;
+}
+.twitter{
+    margin-top: -4.11em;
+    float: left;
+    width: 9em;
+    height: 4em;
+    margin-left: 30em;
+    text-align: center;
+    background: #0795ce;
+}
+.on-twitter{
+    font-size: 23px;
+    width: 5em;
+    height: 2em;
+    color: white;
+    margin-top: 0.3em;
+    margin-left: 0.7em;
+    text-align: center;
+}
+.white-twitter{
+    margin-top: -0.3em;
+    height: 2em;
+    width: 2.45em;
+    padding-left: 32px;
+    border: 2px inset #0796ce94;
+    margin-left: 0em;
+    background-color: rgba(4, 121, 167, 0.418);;
+}
+.white-twitter-a{
+    margin-top: -2.26em;
+    height: 2em;
+    width: 2.35em;
+    padding-left: 28.5px;
+    border: 2px inset #0796ce94;
+    margin-left: 4.6em;
+    background-color: rgba(4, 121, 167, 0.418);;
+}
+.instagram {
+    margin-top: -4.11em;
+    float: left;
+    width: 9em;
+    height: 4em;
+    margin-left: 41em;
+    text-align: center;
+    background: #d63155;    
+}
+.on-instagram{
+   font-size: 23px;
+    width: 5em;
+    height: 2em;
+    color: white;
+    margin-top: 0.3em;
+    margin-left: 0.7em;
+    text-align: center;
+}
+.white-instagram{
+    margin-top: -0.4em;
+    height: 2em;
+    width: 2.45em;
+    padding-left: 32px;
+    border: 2px inset #d63155c9; 
+    margin-left: 0em;
+    background-color: #d6315596; 
+}
+.white-instagram-a{
+    margin-top: -2.27em;
+    height: 2em;
+    width: 2.35em;
+    padding-left: 28.5px;
+    border: 2px inset #d63155c9; 
+    margin-left: 4.6em;
+    background-color: #d6315596; 
+}
+.gmail{
+    margin-top: -4.11em;
+    float: left;
+    width: 9em;
+    height: 4em;
+    margin-left: 52em;
+    text-align: center;
+    background: #cc1818; 
+}
+.on-gmail{
+    font-size: 23px;
+    width: 5em;
+    height: 2em;
+    color: white;
+    margin-top: 0.3em;
+    margin-left: 0.7em;
+    text-align: center;
+}
+.white-gmail{
+    margin-top: -0.3em;
+    height: 2em;
+    width: 2.45em;
+    padding-left: 32px;
+    border: 2px inset #cc1818b0;
+    margin-left: 0em;
+    background-color: #cc1818a2; 
+}
+.white-gmail-a{
+    margin-top: -2.26em;
+    height: 2em;
+    width: 2.35em;
+    padding-left: 28.5px;
+    border: 2px inset #cc1818b0;
+    margin-left: 4.6em;
+    background-color: #cc1818a2; 
+}
+.face-size {
+    margin-top: 1.4em;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: #f1fdf9f6;  
+}
+.face-size li{
+    text-decoration: none;
+    list-style-type: none !important;
+}
+.isg-size{
+    margin-top: -1.2em;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: #f1fdf9f6;  
+}
+.tw-size{
+    margin-top: -1.3em;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: #f1fdf9f6;       
+}
+.gm-size{
+    margin-top: -1.3em;
+    font-size: 18px;
+    margin-left: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+    color: #f1fdf9f6;     
+}
+
+.information{
+
+    margin-top: 9em;
+    margin-left: 19em;
+    width: 42em;
+    height: 32em;
+    color:rgba(49, 49, 49, 0.884);
+}
+.information-one {
+    width: 12em;
+    height: 14em;
+    border:2px solid #0c0c0c;
+    background-color: rgba(0, 0, 0, 0.89);
+    
+}
+.information-one  img{
+	display:block;
+	transition: all .3s ease;
+     width: 50%; 
+    height: 50%;
+}
+.information-one  img:hover{
+    width: 100%; 
+    height: 100%;
+	transform: scale(0.5.1);
+    cursor: pointer; 
+
+} 
+.information-one  div{
+	display:block;
+	overflow: hidden;
+}
+.people-one{
+    margin-left: -3em;
+    margin-top: -1.2em;
+    color: white;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+li.people-one{
+    text-decoration: none;
+    list-style-type: none !important;
+}
+.gif-h4{
+    text-align: center;
+    width: 13em;
+    height: 3em;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    font-size: 15px;
+    animation-iteration-count: infinite;
+    margin-top: 0.3em;
+    margin-left: -0.5em;
+    
+}
+  @keyframes example {
+      
+    0% {color:rgba(133, 6, 31, 0.685); left:0px; top:0px;}
+    25% {color:rgba(122, 40, 8, 0.616); left:5px; top:0px;}
+    50% {color:rgba(2, 58, 26, 0.212); left:5px; top:20px;}
+    75% {color:rgb(1, 1, 63); left:0px; top:20px;}
+    100% {color:rgb(143, 0, 245); left:0px; top:0px;}
+  }
+  .information-two {
+    width: 12em;
+    height: 14em;
+    border: 2px solid #0c0c0c;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-left: 16.5em;
+    margin-top: -14.2em;
+}
+.information-two  img{
+	display:block;
+	transition: all .3s ease;
+     width: 50%; 
+    height: 50%;
+    background-size: cover;
+}
+.information-two  img:hover{
+    width: 100%; 
+    height: 100%;
+	transform: scale(0.5.1);
+    cursor: pointer; 
+} 
+.information-two  div{
+	display:block;
+	overflow: hidden;
+}
+.people-two{
+    margin-left: -3em;
+    margin-top: -1.2em;
+    color: white;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+.information-three {
+    width: 12em;
+    height: 14em;
+    border:2px solid #0c0c0c;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-left: 33em;
+    margin-top: -14.3em;
+    
+}
+.information-three  img{
+	display:block;
+	transition: all .3s ease;
+     width: 50%; 
+    height: 50%;
+    background-size: cover;
+}
+.information-three  img:hover{
+    width: 100%; 
+    height: 100%;
+	transform: scale(0.5.1);
+    cursor: pointer; 
+} 
+.information-three  div{
+	display:block;
+	overflow: hidden;
+}
+.people-three{
+    margin-left: -3em;
+    margin-top: -1.2em;
+    color: white;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+li.people-three{
+    text-decoration: none;
+    list-style-type: none !important;
+}
+.img2{
+    background-size: cover; 
+}
+li.people-accept {
+    width: 5em;
+}
+.information-four {
+    width: 12em;
+    height: 14em;
+    border: 2px solid #0c0c0c;
+    background-color: rgba(0, 0, 0, 0.89);
+    margin-left: 0em;
+    margin-top: 0.8em;
+}
+.information-four  img{
+	display:block;
+	transition: all .3s ease;
+     width: 50%; 
+    height: 50%;
+    background-size: cover;
+}
+.information-four  img:hover{
+    width: 100%; 
+    height: 100%;
+	transform: scale(0.5.1);
+    cursor: pointer; 
+} 
+.information-four  div{
+	display:block;
+	overflow: hidden;
+}
+.people-four{
+    margin-left: -3em;
+    margin-top: -1.2em;
+    color: white;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+   
+}
+.chart-two {
+    height: 22%;
+    width: 80%;
+    margin-top: 9em;
+    margin-left: 10em;
+}

@@ -1,0 +1,135 @@
+body,
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Infor_Cart {
+    margin-top: 50px;
+}
+
+.Contain_Cart {
+    position: relative;
+}
+
+.Main_Cart h1 {
+    text-align: center;
+    margin: 17px 0px;
+    border-bottom: 1px solid gray;
+    padding-top: 30px;
+}
+
+
+/* thead */
+
+table {
+    width: 100%;
+    background: #f5f5f5;
+    border-collapse: collapse;
+}
+
+thead {
+    background: black;
+    color: white;
+    height: 40px;
+}
+
+th {
+    font-size: 20px;
+}
+
+th,
+td {
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+
+/* tbody */
+
+tbody tr td img {
+    height: 100px;
+    width: 100px;
+}
+
+.Del_Cancel {
+    margin: 0 auto;
+    padding: 5px 0;
+    width: 200px;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    background: #000;
+    border: 1px solid gray;
+    cursor: grabbing;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+tbody a:hover {
+    opacity: 0.8;
+}
+
+
+/* phân trang */
+
+.Pagination {
+    margin: 50px 0;
+    text-align: center;
+}
+
+#numberPage {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-weight: bold;
+}
+
+#numberPage:hover {
+    background: black;
+    color: white;
+}
+
+#previous_Number {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-weight: bold;
+}
+
+#previous_Number:hover {
+    background: black;
+    color: white;
+}
+
+#affter_Number {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin: 0px 10px;
+    text-decoration: none;
+    color: rgb(73, 72, 72);
+    font-weight: bold;
+}
+
+#affter_Number:hover {
+    background: black;
+    color: white;
+}
+
+
+/* trang hiện tại */
+
+#current_Page {
+    border-radius: 50%;
+    margin: 0px 10px;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    background: black;
+    color: white;
+}

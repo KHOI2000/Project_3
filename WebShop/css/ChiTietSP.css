@@ -1,0 +1,321 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+#Notification {
+    border-radius: 5px;
+    position: fixed;
+    margin-top: 200px;
+    right: -330px;
+    top: 0;
+    width: 300px;
+    height: 70px;
+    border-left: 1px solid #47d864;
+    border-width: 4px;
+    color: black;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    animation: slide_Left ease 1s forwards, slide_Right linear 0.5s 3.5s forwards;
+}
+
+#Notification h4 {
+    background-image: url("/QuanLyShop/Image/Icon/checked.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position-y: 23px;
+    background-position-X: 10px;
+    text-align: center;
+    height: 80px;
+    line-height: 70px;
+}
+
+@keyframes slide_Left {
+    from {
+        opacity: 0;
+        right: -330px;
+        transform: translateX(calc(100%));
+    }
+    to {
+        opacity: 1;
+        right: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_Right {
+    to {
+        right: -330px;
+        opacity: 0;
+        transform: translateX(calc(100%));
+    }
+}
+
+#imgSP img {
+    margin-left: 30px;
+    width: 400px;
+    height: 400px;
+}
+
+
+/* hướng dẫn chọn size Image */
+
+.ImageSize div {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+
+/* tên sản phẩm */
+
+#inforSP h1 {
+    border-bottom: 1px solid gray;
+}
+
+
+/* size */
+
+#Main_Size div input {
+    margin: 0px 5px;
+}
+
+
+/* Mua hàng và thêm giỏ hàng */
+
+.incCrart_buyProduct input {
+    font-weight: bold;
+    width: 170px;
+    cursor: grab;
+    color: white;
+    transition: opacity 0.3s ease;
+    height: 50px;
+    margin: 0 5px;
+    background: #000;
+}
+
+#btIncreaCart:hover {
+    opacity: 0.8;
+}
+
+#btBuyProduct:hover {
+    opacity: 0.8;
+}
+
+
+/* Mô tả sản phẩm */
+
+#describeSP {
+    width: 400px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+#inforSP {
+    margin: 0px 50px;
+}
+
+#Main_Size,
+.Main_Amount {
+    margin: 30px 0px;
+}
+
+.incCrart_buyProduct {
+    margin: 50px 0px;
+}
+
+
+/* bình luận sản phẩm */
+
+.reviewProduct {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+.comment {
+    display: flex;
+}
+
+.comment img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+.Content {
+    position: relative;
+    height: 120px;
+    width: 400px;
+}
+
+
+/* thu nhỏ trình duyệt comment - Mobile */
+
+@media (min-width: 840px) {
+    .Content {
+        width: 1000px;
+    }
+}
+
+.Content p {
+    margin: 10px;
+}
+
+.Content input {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border: none;
+}
+
+#submit_Content {
+    position: absolute;
+    right: 0;
+    margin: 5px 0;
+    height: 30px;
+    width: 50px;
+    display: block;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.Nav_Comment {
+    display: flex;
+    margin: 10px auto;
+}
+
+.Contain_Comment {
+    margin: 0 auto;
+    height: auto;
+    width: 400px;
+}
+
+@media (min-width: 740px) {
+    .Contain_Comment {
+        width: 1000px;
+    }
+}
+
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#MainBuy {
+    margin: 150px 0;
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+#moneyProduct {
+    color: red;
+}
+
+#moneyProduct::after {
+    content: "đ";
+}
+
+
+/* Size */
+
+#Main_Size {
+    align-items: center;
+    display: flex;
+}
+
+#Main_Size div {
+    margin-left: 30px;
+}
+
+
+/* Thông tin số lượng size còn */
+
+#TableInfoProduct table {
+    background: none;
+    color: black;
+    border-collapse: collapse;
+}
+
+#TableInfoProduct table thead{
+    background: transparent;
+    color: black;
+}
+
+
+#TableInfoProduct table tbody tr td {
+    border-top: 1px solid gray;
+    padding: 5px 0;
+}
+
+
+/* Hướng dẫn chọn size */
+
+#support_Size input {
+    height: 30px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-right: 5px;
+    border: 1px solid gray;
+}
+
+#searchSize {
+    width: 80px;
+    font-weight: bold;
+    box-shadow: 0px 2px 5px 0 rgb(0 0 0/ 16%), 0 2px 10px 0 rgb(0, 0, 0 / 12%);
+    background: white;
+    cursor: grabbing;
+}
+
+#result {
+    margin-top: 15px;
+    border: none;
+    font-weight: bold;
+}
+
+
+/* số lượng */
+
+.Main_Amount {
+    margin-top: 30px;
+}
+
+.Main_Amount span {
+    margin-right: 50px;
+    font-weight: bold;
+}
+
+.increase_reduction input {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: none;
+    border: 1px solid gray;
+}
+
+#amount {
+    width: 70px;
+}
+
+
+/* sản phẩm liên quan */
+
+.List_ProductRelation {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+}

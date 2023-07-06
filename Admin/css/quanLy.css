@@ -1,0 +1,160 @@
+h1 {
+  font-family: 'Amarante', Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #009efb;
+  margin-top: 50px;
+  text-align: center;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: grab;
+}
+
+/*chỉnh kích thước và vị trí chữ */
+#keywords {
+  margin: 0 auto;
+  font-size: 12px;
+  width: 100rem;
+  background: #fff;
+
+}
+
+/*khung xanh bao chữ*/
+#keywords thead {
+  cursor: pointer;
+  color: #54667a;
+}
+
+/*Kích thước khung xanh*/
+#keywords thead tr th {
+  padding: 12px 15px;
+  text-align: center;
+  border-right: 1px solid #ccc;
+  font-size: 17px;
+  font-weight: 500;
+  color: #54667a;
+  border: none;
+
+}
+
+/*Kích thước khung xanh*/
+#keywords thead tr th span {
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+/*Chỉnh chữ trong bảng*/
+#keywords tbody tr td {
+  text-align: center;
+  padding: 15px 10px;
+}
+
+.btn-add {
+  padding: 8px 43px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  background-color: #5aeb5d;
+  margin-right: 44px;
+  border-radius: 10px;
+  margin-left: 88%;
+}
+
+
+.btn-success {
+  background: #55ce63;
+  color: white;
+  text-align: center;
+  cursor: grab;
+  transition: opacity 0.9s linear;
+  width: 70px;
+  font-weight: bold;
+}
+
+.btn-success:hover
+{
+  opacity: 80%;
+
+}
+
+tbody tr td {
+  width: 10%;
+}
+
+.btn:active{
+  transform: scale(0.9);
+  border: none;
+  outline: none;
+}
+
+.btn-success,
+.btn-dec,
+.btn-deal,
+.btn-update,
+.btn-check,
+.btn-danger,
+.btn-start,
+.btn-end{
+  padding: 8px 20px;
+  border-radius: 10px;
+}
+
+.btn-update i {
+  color: #5aeb5d;
+}
+
+.btn-start i
+{
+  color: rgb(219, 82, 2);
+}
+
+.btn-end i
+{
+  color: rgb(102, 102, 239);
+}
+
+.btn-check i {
+  color: red;
+}
+
+.btn-danger i {
+  color: #ee5971
+}
+.btn-success i{ 
+  color: white;
+  font-size: 14px;
+}
+.btn-deal i{ 
+  color: #0f9abb;
+    font-size: 14px;
+}
+
+.Pagination a
+{
+  padding: 5px 10px;
+  margin: 0 10px;
+  background: rgba(6, 11, 40, 0.94);
+  border-radius: 50%;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.Pagination a:hover
+{
+  opacity: 85%;
+}
+
+a.active
+{
+  background: linear-gradient(to right,#0178bc 0%,#00bdda 100%);
+  box-shadow: 1px 0px 20px rgb(0 0 0 / 8%);
+  color: white;
+
+}
+.Pagination{
+  margin: 20px 0;
+  text-align: center;
+}

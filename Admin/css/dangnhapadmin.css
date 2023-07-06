@@ -1,0 +1,116 @@
+/* Màu nền */
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1d243d;
+  }
+  /*Căn chỉnh form đăng ký giữa màn hình*/
+  .container{
+    margin: 0;
+    top: 50px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: rgb( 33, 41, 66 );
+    border-radius: 9px;
+    border-top: 10px solid #79a6fe;
+    border-bottom: 10px solid #8BD17C;
+    width: 400px;
+    height: 500px;
+    box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+  }
+  /*Chỉnh màu của h4*/
+  .box h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #5c6bc0; 
+    font-size: 18px;
+    margin-top:94px;;
+  }
+  /*Chỉnh 2 màu chữ Đăng Ký*/
+  .box h4 span {
+    color: #dfdeee;
+  }
+  /*Chỉnh màu và kích thước của Đăng nhập tài khoản của bạn*/
+  .box h5 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    color: #a1a4ad;
+    letter-spacing: 1.5px; /*Khoảng cách giữa các chữ*/
+    margin-top: -15px;
+    margin-bottom: 70px;
+  }
+  /*Chỉnh màu và kích thước cho các kiểu input*/
+  .box input[type = "text"],.box input[type = "password"] {
+    display: block;
+    margin: 20px auto;
+    background: #262e49;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px 10px;
+    width: 320px;
+    outline: none;
+    color: #d6d6d6;
+  }
+  /*Chỉnh màu chữ ở dưới input*/
+  ::-webkit-input-placeholder {
+    color: #565f79;
+  }
+  /*Chỉnh màu chữ Chưa có tài khoản*/
+  a{
+    color: #5c7fda;
+    text-decoration: none; /*tắt gạch chân*/
+  }
+  /*Di chuyển chuột vào mới gạch chân*/
+  a:hover {
+    text-decoration: underline;
+  }
+  /*Chỉnh nút vị trí Checkbox*/
+  label input[type = "checkbox"] {
+      height: 13px;
+      width: 13px;
+      border: 2px solid #464d64;
+      border-radius: 2px;
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      left: 7.5%;
+  }
+  /*Chỉnh nút vị trí và màu sắc đăng nhập*/
+  .btn1 {
+    border:0;
+    background: #79a6fe;
+    color: #dfdeee;
+    border-radius: 100px;
+    width: 340px;
+    height: 49px;
+    font-size: 16px;
+    position: absolute;
+    top: 79%;
+    left: 8%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  /*Di chuột vào nút Đăng Ký sẽ đổi màu*/
+  .btn1:hover {
+    background: #8BD17C;
+  }
+  /*Chỉnh màu và vị trí nút lưu mật khẩu*/
+  .rmb {
+    position: absolute;
+    margin-left: -35%;
+    margin-top: 0px;
+    color: #dfdeee;
+    font-size: 13px;
+  }
+  /*Chỉnh màu và vị trí nút Quên mật khẩu*/
+  .forgetpass {
+    position: relative;
+    float: right;
+    right: 28px;
+  }
+  /*Chỉnh màu và vị trí nút chưa có tài khoản*/
+  .dnthave{
+      position: absolute;
+      top: 92%;
+      left: 24%;
+  }

@@ -1,0 +1,200 @@
+html,
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* title giỏ hàng */
+
+.Title_Cart {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.Title_Cart h1 {
+    height: 60px;
+    border-bottom: 1px solid gray;
+    margin: auto 10px;
+}
+
+.Title_Cart img {
+    height: 40px;
+    width: 40px;
+    margin: auto 0px;
+}
+
+
+/* Thanh mua hàng */
+
+.Main_PayProduct {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    position: relative;
+    font-weight: bold;
+    background: whitesmoke;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    height: 100px;
+}
+
+
+/* xóa toàn bộ giỏ hàng */
+
+.DeleteAllCart {
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    margin: auto 15px;
+    line-height: 40px;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    background: #000;
+    color: white;
+    cursor: grabbing;
+    transition: opacity 0.3s ease;
+}
+
+.DeleteAllCart:hover {
+    opacity: 0.9;
+}
+
+
+/* thanh toán */
+
+.Detail_Paypal {
+    display: flex;
+    margin: auto 0;
+}
+
+#TotalPaypal {
+    display: block;
+    margin: auto 0;
+}
+
+.Detail_Paypal input {
+    font-weight: bold;
+    margin: 5px 20px;
+    border-radius: 10px;
+    font-style: bold;
+    height: 50px;
+    width: 100px;
+    background: #000;
+    color: white;
+    cursor: grabbing;
+    transition: opacity 0.3s ease;
+}
+
+.Detail_Paypal:hover {
+    opacity: 0.9;
+}
+
+
+/* thông báo khi mua hàng */
+
+#Notification {
+    border-radius: 5px;
+    position: fixed;
+    margin-top: 180px;
+    top: 0;
+    right: -330px;
+    width: 300px;
+    height: 70px;
+    border-left: 1px solid #47d864;
+    border-width: 4px;
+    color: black;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    animation: slide_Left ease 1s forwards, slide_Right linear 0.5s 3.5s forwards;
+}
+
+#Notification h4 {
+    background-image: url("/QuanLyShop/Image/Icon/checked.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position-y: 23px;
+    background-position-X: 10px;
+    text-align: center;
+    height: 80px;
+    line-height: 70px;
+}
+
+@keyframes slide_Left {
+    from {
+        opacity: 0;
+        right: -330px;
+        transform: translateX(calc(100%));
+    }
+    to {
+        opacity: 1;
+        right: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_Right {
+    to {
+        right: -330px;
+        opacity: 0;
+        transform: translateX(calc(100%));
+    }
+}
+
+
+/* thông báo giỏ hàng trống */
+
+#Notification_Error {
+    border-radius: 5px;
+    position: fixed;
+    margin-top: 180px;
+    top: 0;
+    right: -330px;
+    width: 300px;
+    height: 70px;
+    border-left: 1px solid #ee4d2d;
+    border-width: 4px;
+    color: black;
+    background: white;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    animation: slide_Left ease 1s forwards, slide_Right linear 0.5s 3.5s forwards;
+}
+
+#Notification_Error h4 {
+    background-image: url("/QuanLyShop/Image/Icon/Warning.png");
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    background-position-y: 23px;
+    background-position-X: 20px;
+    text-align: center;
+    height: 80px;
+    line-height: 70px;
+}
+
+@keyframes slide_Left {
+    from {
+        opacity: 0;
+        right: -330px;
+        transform: translateX(calc(100%));
+    }
+    to {
+        opacity: 1;
+        right: 0;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide_Right {
+    to {
+        right: -330px;
+        opacity: 0;
+        transform: translateX(calc(100%));
+    }
+}

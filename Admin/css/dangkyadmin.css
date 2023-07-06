@@ -1,0 +1,78 @@
+
+/* Màu nền */
+body, html {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #1d243d;
+  }
+  /*Căn chỉnh form đăng ký giữa màn hình*/
+  .container{
+    margin: 0;
+    top: 50px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translateX(-50%);
+    background-color: rgb( 33, 41, 66 );
+    border-radius: 9px;
+    border-top: 10px solid #79a6fe;
+    border-bottom: 10px solid #8BD17C;
+    width: 400px;
+    height: 700px;
+    box-shadow: 1px 1px 108.8px 19.2px rgb(25,31,53);
+  }
+  /*Căn chỉnh chữ Đăng ký tài khoản*/
+  .box h4 {
+    font-family: 'Source Sans Pro', sans-serif; /*Kích thước chữ*/
+    color: #5c6bc0; 
+    font-size: 18px;
+    margin-top:94px;;
+  }
+  /*Chỉnh màu và kích thước cho các kiểu input*/
+  .box input[type = "text"],.box input[type = "password"],.box input[type = "repass"],.box input[type = "email"] {
+    display: block;
+    margin: 20px auto;
+    background: #262e49;
+    border: 0;
+    border-radius: 5px;
+    padding: 14px 10px;
+    width: 320px;
+    outline: none;
+    color: #d6d6d6;
+
+  }
+  /*Chỉnh màu chữ ở dưới input*/
+  ::-webkit-input-placeholder {
+    color: #565f79;
+  }
+  /* Đăng Ký */
+  .btn1 { 
+    border:0;
+    background: #79a6fe;
+    color: #dfdeee;
+    border-radius: 100px;
+    width: 340px;
+    height: 49px;
+    font-size: 16px;
+    position: absolute;
+    top: 85%;
+    left: 8%;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  /*Chỉnh 2 màu chữ Đăng Ký*/
+  .box h4 span {
+    color: #dfdeee;
+  }
+  /*Di chuột vào nút Đăng Ký sẽ đổi màu*/
+  .btn1:hover {
+    background: #8BD17C;
+  }
+  
+  
+  
+  
+  
+  
+
+  
+ 

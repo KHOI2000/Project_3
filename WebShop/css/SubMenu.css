@@ -1,0 +1,97 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#wrapper_SubMenu {
+    z-index: 7;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 58px 30px;
+    background: #f5f5f5;
+}
+
+ul li a {
+    font-weight: bold;
+    color: black;
+}
+
+#Title_Submenu {
+    margin: 18px 10px;
+}
+
+#main_menu_SubMenu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+#main_menu_SubMenu div {
+    display: flex;
+}
+
+#main_menu_SubMenu li a {
+    cursor: grab;
+    margin: 0px 20px;
+    color: black;
+    display: block;
+    padding: 18px 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+/* mặc định không drop thẻ li */
+
+#main_menu_SubMenu div ul.sub_menu {
+    list-style: none;
+    display: block;
+    position: absolute;
+    background: #f5f5f5;
+    padding: 15px 0px;
+    cursor: grab;
+    margin-left: 15px;
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.3s ease;
+    z-index: 1;
+}
+
+
+/* khi di chuyển chuột qua drop thẻ li */
+
+#main_menu_SubMenu li:hover ul.sub_menu {
+    height: auto;
+    transform: scaleY(1);
+}
+
+#main_menu_SubMenu ul.sub_menu a {
+    width: 160px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #434343;
+}
+
+
+/* bỏ border thẻ li cuối cùng */
+
+#main_menu_SubMenu ul.sub_menu li:last-child a {
+    border: none;
+}
+
+#main_menu_SubMenu ul.sub_menu li:hover a {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+/* Lọc sản phẩm */
+#Classify
+{
+    width: 200px;
+}
+
+#Classify li a
+{
+    display: flex;
+}

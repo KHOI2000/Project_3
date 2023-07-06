@@ -1,0 +1,542 @@
+body {
+    font-family: "Quicksand",sans-serif;
+}
+.Header__Mobile
+{
+    display: none;
+}
+#wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 8;
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    color: #abb8c3;
+    animation: sliderHeader 0.6s ease-out;
+}
+
+@keyframes sliderHeader
+{
+    from 
+    {
+        transform: translateY(calc(-100%));
+    }
+    to
+    {
+        transform: translateY(0);
+    } 
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    align-items: center;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    height: 60px;
+}
+
+ul li a {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+/* đăng nhập đăng ký */
+
+.Header_Infor {
+    display: flex;
+    margin: auto 10px;
+}
+
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: auto auto;
+}
+
+#main-menu li {
+    position: relative;
+    margin: auto 20px;
+}
+
+#main-menu li a {
+    cursor: grab;
+    display: block;
+    text-decoration: none;
+    cursor: grab;
+    position: relative;
+}
+
+
+/* mặc định không drop thẻ li */
+
+.sub-menu_Product {
+    line-height: 3;
+    z-index: 10;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background: #ffffff;
+    width: auto;
+    cursor: grab;
+    height: auto;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 18%);
+}
+
+.sub-menuItem {
+    margin: auto -20px;
+}
+
+.sub-menuItem li {
+    list-style: none;
+}
+
+.sub-menuItem li a {
+    font-weight: 500;
+}
+
+.Title_SubMenu {
+    font-weight: bolder;
+    color: black;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+
+/* thông tin tài khoản */
+
+#Contain_NewInfor {
+    align-items: center;
+}
+
+.sub-menu_Infor {
+    list-style: none;
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    padding: 15px 0px;
+    width: auto;
+    cursor: grab;
+    margin-left: 15px;
+    height: 0;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: 0.3s ease;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 18%);
+}
+
+
+/* hover các sản phẩm*/
+
+#main-menu li:hover .sub-menu_Product {
+    height: auto;
+    transform: scaleY(1);
+}
+
+#main-menu .sub-menu_Product a {
+    width: 120px;
+    border-bottom: 1px solid #434343;
+}
+
+#main-menu .sub-menuItem li:hover a {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+#main-menu .sub-menuItem li:last-child a {
+    border: none;
+}
+
+
+/* hover thông tin khách hàng */
+
+#main-menu .sub-menu_Infor a {
+    text-align: center;
+    width: 120px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #434343;
+}
+
+#main-menu li:hover .sub-menu_Infor {
+    height: auto;
+    transform: scaleY(1);
+}
+
+#main-menu .sub-menu_Infor li:hover a {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+#main-menu .sub-menu_Infor li:last-child a {
+    border: none;
+}
+
+
+/* khi di chuyển chuột qua menu border xuất hiện */
+
+#DivDangNhap>li>a::before {
+    cursor: grab;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: rgb(27, 26, 26);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#DivDangKy>li>a::before {
+    cursor: grab;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: rgb(27, 26, 26);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu>li>a::before {
+    cursor: grab;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: rgb(27, 26, 26);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu #DivInfor>li>a::before {
+    cursor: grab;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background: rgb(27, 26, 26);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#main-menu #DivInfor>li:hover>a::before {
+    width: 190px;
+    display: block;
+}
+
+#main-menu>li:hover>a::before {
+    width: 100%;
+    display: block;
+}
+
+
+/* Header Tìm kiếm */
+
+#Mobile-menu-btn
+{
+    display: none;
+}
+/* Menu thông tin khách hàng sau khi đăng nhập */
+
+.menu-DangNhap img {
+    width: 30px;
+    height: 30px;
+}
+
+#DivInfor #menu-Infor img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto -35px;
+}
+
+#menu-Infor a {
+    width: 150px;
+}
+
+
+/* Menu tìm kiếm */
+
+#menu-search {
+    margin: auto 30px;
+}
+
+#IDTimKiem {
+    padding: 0 5px;
+}
+
+#menu-search input {
+    position: relative;
+    box-shadow: 0px 2px 5px 0 rgb(0 0 0/ 50%), 0 2px 10px 0 rgb(0, 0, 0 / 12%);
+    border-radius: 5px;
+    width: 420px;
+    height: 40px;
+    background: #f5f5f5;
+}
+
+.MainSearch {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.SearchItem {
+    position: absolute;
+    width: 480px;
+    height: 100vh;
+    right: -100%;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 2px 5px 0 rgb(0 0 0/ 50%), 0 2px 10px 0 rgb(0, 0, 0 / 12%);
+    animation: SlideRight 0.5s linear forwards;
+}
+
+@keyframes SlideRight {
+    form {
+        transform: translateX(calc(100%));
+        right: -100%;
+    }
+    to {
+        transform: translateX(0);
+        right: 0;
+    }
+}
+
+.SearchItem img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+    cursor: grab;
+}
+
+.SearchItem h1 {
+    text-align: center;
+    width: auto;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#Contain_SearchProc {
+    position: relative;
+}
+
+#menu-search .btTimKiem {
+    position: absolute;
+    cursor: grab;
+    border: none;
+    font-display: none;
+    right: 0;
+    background: none;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    margin: 6px 0;
+    background-image: url("/QuanLyShop/Image/Menu/Find.png");
+    /*đây là icon cần thêm*/
+    background-repeat: no-repeat;
+    /* make the background image appear only once */
+    background-position: -1px -1px;
+    /* equivalent to 'top left' */
+    background-size: 30px 30px;
+}
+
+.btTimkiemNew {
+    cursor: grab;
+    background: none;
+    width: 30px;
+    height: 30px;
+    margin: auto 15px;
+}
+
+
+/* Giỏ Hàng */
+
+.Shopping_Cart .Cart {
+    cursor: grabbing;
+    background: white;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 50%;
+}
+
+.Shopping_Cart img {
+    position: absolute;
+    margin: 5px 5px;
+    height: 20px;
+    width: 20px;
+}
+
+
+/* lịch sử giỏ hàng */
+
+.Contain_HistoryCart {
+    position: relative;
+    width: auto;
+    margin: auto 5px;
+}
+
+.Contain_HistoryCart img {
+    position: relative;
+    height: 25px;
+    width: 25px;
+    cursor: grab;
+}
+
+.Contain_HistoryCart:hover .History_Cart {
+    display: block;
+    /* animation: FadeIn linear 0.5s; */
+}
+
+@keyframes FadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.History_Cart {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    background: white;
+    right: 0;
+    height: 300px;
+    width: 350px;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: auto;
+    z-index: 5;
+}
+
+.History_Cart h3 {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+    padding: 10px 0px;
+}
+
+
+/* tổng số lượng giỏ hàng */
+
+#sumCart,#sumCart2 {
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    top: 0;
+    left: 0;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    border-radius: 50%;
+    background: rgb(241, 70, 70);
+    margin: -14px -8px;
+    cursor: default;
+    padding: 1px;
+}
+
+
+/* thông tin lịch sử giỏ hàng */
+
+.Container_History {
+    display: flex;
+    border-bottom: 1px solid gray;
+}
+
+.Contain__Img {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+#Container_History_Img {
+    width: 70px;
+    height: 70px;
+}
+
+.Contain__InforHistory {
+    letter-spacing: 1px;
+    font-weight: bold;
+    line-height: 50px;
+    color: black;
+}
+
+.Contain__InforHistory h5 {
+    margin-top: -22px;
+}
+
+/* xem giỏ hàng */
+
+.History_Bottom {
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.History_Bottom h4 {
+    font-weight: bold;
+    margin-left: 5px;
+    line-height: 40px;
+}
+
+.History_Bottom a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: #ee4d2d;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 5px 30px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+
+/* header tim kiem */
+
+.Header_Search {
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    border-bottom: 1px solid rgb(202, 199, 199);
+    padding: 10px 0;
+}
+
+.Header_Logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto 10px;
+}

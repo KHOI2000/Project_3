@@ -1,0 +1,111 @@
+body {
+    position: relative;
+}
+
+.Container_Reget {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background: white;
+    box-shadow: 1px 1px 30px rgb(120 127 129);
+    width: 600px;
+    height: 400px;
+}
+
+.Container_Reget h1 {
+    text-align: center;
+}
+
+.Main__Foget div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.Main__Foget div h4 {
+    text-align: left;
+    width: 150px;
+    margin: auto 0;
+}
+
+.Main__Foget div input {
+    width: 400px;
+    height: 40px;
+    border: 1px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: auto 0;
+}
+
+.Main__Foget__subMit {
+    margin: 0 169px;
+    height: 40px;
+    width: 260px;
+    color: white;
+    background-color: black;
+    cursor: grab;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.Main__Foget__subMit:hover
+{
+    animation: changedOpacity 0.3s linear forwards;
+}
+
+@keyframes changedOpacity
+{
+    to
+    {
+        opacity: 85%;
+    }
+}
+
+
+
+/* capcha */
+
+#codeCapcha {
+    padding: 2px 5px;
+    border: 1px solid gray;
+    height: 40px;
+    width: 100px;
+    background: black;
+    color: white;
+    border-radius: 5px;
+    cursor: default;
+    text-align: center;
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+    font-size: 17px;
+    letter-spacing: 3px;
+}
+
+.Main__Foget__Capcha {
+    margin: auto 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.Main__Foget__Capcha i {
+    cursor: grab;
+    margin-left: 5px;
+}
+
+
+/* trở về trang đăng nhập */
+
+.Main__Foget__backLogin {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.Main__Foget__backLogin a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
